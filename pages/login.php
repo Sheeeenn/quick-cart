@@ -1,13 +1,7 @@
-<html>
+<?php
 
-    <head>
-        <title>Login Page</title>
-    </head>
+require("codes/main/register_code.php");
+require("views/login.php");
 
-    <body> 
 
-        <h1> LOGIN PHP </h1>
-
-    </body>
-
-</html>
+?>

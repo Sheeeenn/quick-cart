@@ -1,0 +1,20 @@
+//TO Hide Message When Typing
+
+<?php if (!empty($message)): ?>
+    <p id="message" 
+        class="message <?php echo strpos($message, 'successfully') !== false ? 'success' : 'error'; ?>">
+        <?php echo htmlspecialchars($message); ?>
+    </p>
+    <script>
+        // Hide message when typing
+        const inputs = document.querySelectorAll('input[type="text"]');
+        inputs.forEach(input => {
+            input.addEventListener('input', function () {
+                const messageElement = document.getElementById('message');
+                if (messageElement) {
+                    messageElement.style.display = 'none';
+                }
+            });
+        });
+    </script>
+<?php endif; ?>

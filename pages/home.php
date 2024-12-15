@@ -1,7 +1,7 @@
 <?php 
 
 
-require("codes/main/home.php");
+require("codes/main/home_code.php");
 require("codes/users/get_current_user.php");
 
 include("codes/session/start.php");

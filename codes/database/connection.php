@@ -1,6 +1,6 @@
 <?php
 
-$dbname = "shoppee";
+$dbname = "quick-cart";
 $dbusername = "root";
 $dbpassword = "";
 $dbhost = "localhost";//localhost
